@@ -10,7 +10,7 @@ la carpeta SRC es en la que esta todo(los index, los estilos, los .js y las otra
 "esa no hay que meterla dentro de otra carpeta"
 
 
-LA IFORMACION ESTA MAS DETALLADA EN EL WORD ABREME.dox LA CARPETA 
+LA IFORMACION ESTA MAS DETALLADA EN EL WORD ABREME.docx 
 
 
 
