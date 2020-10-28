@@ -7,3 +7,11 @@ como para tener un orden ya que esos archivos son del entorno virtual
 
 la carpeta SRC es en la que esta todo(los index, los estilos, los .js y las otras paginas)
 "esa no hay que meterla dentro de otra carpeta"
+
+
+
+
+
+
+
+
