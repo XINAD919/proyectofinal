@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProyectoX</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css/style.css')}}"
+    />
+    <link
+      rel="icon"
+      href="https://lh3.googleusercontent.com/9HcD4xNAUvLTXMgWfczb5UxXk-VW7nKmuZ5Gz-_6b9zoXelq4u-rxjCqKn6ADHTkiBs"
+    />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script
+      src="https://kit.fontawesome.com/86f3aeba5f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div>
+      <span>
+        <a class="fas fa-angle-left" href="{{url_for('home')}}">
+          <i>Atras</i>
+        </a>
+      </span>
+    </div>
+
+    <div>
+      <h1>Registrarse</h1>
+      <form action="/registrarUsuario" method="POST">
+        <input type="text" name="nombre" placeholder="Tu nombre" />
+        <input type="email" name="correo" placeholder="Tucorreo@email.com" />
+        <input type="password" name="contraseña" placeholder="contraseña" />
+        <button type="submit">Registrarse</button>
+      </form>
+    </div>
+    <!-- mensaje de success al logearse -->
+    {% with success = get_flashed_messages(category_filter=['success']) %} {% if
+    success %} {% for msg in success %}
+    <p>{{ msg }}</p>
+    {% endfor %} {% endif %} {% endwith %}
+    <!-- -------------------------------------------------- -->
+
+    <script src="{{ url_for('static',filename='js/app.js')}}"></script>
+  </body>
+</html>

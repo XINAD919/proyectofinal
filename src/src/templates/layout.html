@@ -1,0 +1,178 @@
+<!-- este es la plantilla para usar en las paginas -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <!-- bootstrap 4-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!-- mi css personal -->
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <!-- --------------------------------------------------------- -->
+    <link
+      rel="icon"
+      href="https://lh3.googleusercontent.com/9HcD4xNAUvLTXMgWfczb5UxXk-VW7nKmuZ5Gz-_6b9zoXelq4u-rxjCqKn6ADHTkiBs"
+    />
+    <title>ProyectoX</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script
+      src="https://kit.fontawesome.com/86f3aeba5f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- inicia el header -->
+    <header class="header">
+      <nav class="menu">
+        <div class="logo">ProyectoX</div>
+        <ul class="menu_items">
+          <li>
+            <a href="{{  url_for('login') }}"
+              ><i class="far fa-user icon"></i> Inicia sesion</a
+            >
+          </li>
+          <div class="submenu">
+            <li class="sub_menu">
+              <a href="#"
+                >Menú <i class="fas fa-angle-down"> </i
+                ><span class="caret"></span
+              ></a>
+              <ul class="children">
+                <li><a href="#">Vistos recientemente</a></li>
+                <li><a href="#">Informacion General</a></li>
+                <li><a href="#">Formas de pago</a></li>
+                <li><a href="#">Ayuda y atencion al cliente</a></li>
+              </ul>
+            </li>
+          </div>
+          <div class="responsivemenu">
+            <li>
+              <a href="#"
+                ><span class="nose"><i class="fas fa-angle-right"></i></span
+                >Vistos recientemente</a
+              >
+            </li>
+
+            <li>
+              <a href="#"
+                ><span class="nose"><i class="fas fa-angle-right"></i></span
+                >Informacion General</a
+              >
+            </li>
+
+            <li>
+              <a href="#"
+                ><span class="nose"><i class="fas fa-angle-right"></i></span
+                >Formas de pago</a
+              >
+            </li>
+
+            <li>
+              <a href="#"
+                ><span class="nose"><i class="fas fa-angle-right"></i></span
+                >Ayuda y atencion al cliente</a
+              >
+            </li>
+            <span><h1>Configuración</h1></span>
+            <li>
+              <a href="#"
+                ><span class="nose"><i class="fas fa-angle-right"></i></span
+                >Pais</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="nose"><i class="fas fa-angle-right"></i></span
+                >Moneda</a
+              >
+            </li>
+          </div>
+        </ul>
+
+        <span class="btn_menu">
+          <i class="fas fa-bars"></i><span class="letra_menu">Menú</span>
+        </span>
+      </nav>
+    </header>
+
+    <!-- termina header -->
+
+    <div class="container">{% block content %} {% endblock %}</div>
+
+    <!-- inicia footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-main">
+          <div class="footer-columna">
+            <h3>Suscribete</h3>
+            <input type="email" placeholder="Escriba su Correo" />
+            <input type="submit" placeholder="Suscribirse" />
+          </div>
+          <div class="footer-columna">
+            <h3>Dirección</h3>
+            <span class="fas fa-map-marker-alt"
+              ><p>Cr 56A# 69D-18 Villa Ventura</p></span
+            >
+            <span class="fas fa-phone"><p>(+57) 310-707-38-03</p></span>
+            <span class="fas fa-envelope"
+              ><p>ProyectoX.info@contactUs.com</p></span
+            >
+          </div>
+          <div class="footer-columna">
+            <h3>Sobre Nosotros</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Architecto eos aut nesciunt ea velit esse reiciendis consequuntur
+              saepe amet ab, voluptates assumenda. Praesentium, sunt a.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copy-redes">
+        <div class="main-copy-redes">
+          <div class="footer-copy">
+            Copyright 2020 Proyecto x&copy; | Todos los derechos reservados.
+          </div>
+          <div class="footer-redes">
+            <a
+              href="https://www.facebook.com/ "
+              target="blank"
+              class="fab fa-facebook"
+            ></a>
+            <a
+              href="https://www.instagram.com/?hl=es-la"
+              target="blank"
+              class="fab fa-instagram"
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UCmzNuxXgI2UyEaLopMgwcEg?view_as=subscriber"
+              target="blank"
+              class="fab fa-youtube"
+            ></a>
+            <a
+              href="https://www.linkedin.com/"
+              target="blank"
+              class="fab fa-linkedin"
+            ></a>
+            <a
+              href="https://github.com/XINAD919/daniel"
+              target="blank"
+              class="fab fa-github-alt"
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- termina footer -->
+    <script src="../static/js/app.js"></script>
+  </body>
+</html>
